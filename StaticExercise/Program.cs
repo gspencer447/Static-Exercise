@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            double fahrenheitTemp = 102;
-            Console.WriteLine($"{fahrenheitTemp}°F is equal to {TempConverter.FahrenheitToCelsius(fahrenheitTemp)}°C.");
+            double fahrenheitTemp = TempConverter.FahrenheitToCelsius(70);
+            Console.WriteLine(Math.Round(fahrenheitTemp,2));
 
-            double celsiusTemp = 36;
-            Console.WriteLine($"{celsiusTemp}°C is equal to {TempConverter.CelsiusToFahrenheit(celsiusTemp)}°F.");
+            double celsiusTemp = TempConverter.CelsiusToFahrenheit(100);
+            Console.WriteLine(Math.Round(celsiusTemp,2));
         }
     }
 }
